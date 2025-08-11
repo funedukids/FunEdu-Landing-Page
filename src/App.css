@@ -3,6 +3,9 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  --primary-color: #54D9FF;
+  --secondary-color: #ffffff;
+  --tertiary-color: #d9d9d9;
 }
 
 .logo {
@@ -12,7 +15,7 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #54D9FF);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -40,3 +43,63 @@
 .read-the-docs {
   color: #888;
 }
+
+/* 
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #4507d7;
+  color: var(--secondary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color) !important;
+}
+
+.bg-primary-custom {
+  background-color: var(--primary-color);
+}
+
+.bg-tertiary-custom {
+  background-color: var(--tertiary-color);
+}
+
+.text-primary-custom {
+  color: var(--primary-color);
+}
+
+.link-decoration-custom {
+  text-decoration: none;
+}
+.logolp {
+  width: 400px !important;
+}
+footer{
+  width: 100%;
+}
+.container{
+  overflow-x: hidden;
+}
+.navbar-collapse{
+  background-color: transparent !important;
+}
+.back {
+  background-color: var(--tertiary-color);
+  max-width: 100px;
+  border-radius: 10px;
+  color: var(--primary-color);
+  text-decoration: none; 
+  display: inline-block;
+  text-align: center; 
+} */

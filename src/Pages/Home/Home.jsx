@@ -1,0 +1,137 @@
+import React, { useState } from "react";
+
+import "./Home.css"
+import heroimg from "../../assets/heroimg.svg";
+import img2 from "../../assets/imgsection2.png";
+import icon from "../../assets/icon.png";
+import icon1 from "../../assets/icon(1).png";
+import icon2 from "../../assets/icon(2).png";
+import icon3 from "../../assets/icon(3).png";
+import whyimage from "../../assets/whyimage.png";
+import Footer from "../../Components/Footer/Footer";
+
+function Home() {
+ const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Email submitted:", email);
+    // send email to backend or API
+  };
+
+    return(
+        <div className="landingPage">
+            <div className="container">
+                <section className="heroSection py-1">
+                    <div className="w-100 d-flex row align-items-center">
+                        <div className="herotext col-lg-6">
+                            <div className="herotext1">
+                                <h1 className="display-4 fw-semibold mb-4">Learning made fun, <br /> safe, easy and <br />offline-first </h1>
+                                <p className="lead fw-medium mb-4">We’re building an educational app for kids that works anywhere, anytime — no internet required.</p>
+                                <button className="btn btn-primary btn-lg">Join the Waitlist</button>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 d-flex justify-content-between justify-content-lg-end mt-4 mt-lg-0">
+                        <img
+                        src={heroimg}
+                        height={600}
+                        alt="A picture of toys and a little baby hand"
+                        className="rounded-3"
+                        />
+                    </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div className="w-100 d-flex row align-items-center">
+                        <div className="col-lg-6 d-flex justify-content-between justify-content-lg-start mt-4 mt-lg-0">
+                        <img
+                        src={img2}
+                        height={600}
+                        alt="A picture of toys and a little baby hand"
+                        className="rounded-3"
+                        />
+                    </div>
+                    <div className="herotext col-lg-6">
+                            <div className="section2text">
+                        <h5 className="display fw-semibold mb-4">Every child deserves a safe space to learn and grow. FunEdu is designed to bring learning and creativity to kids — even in places where internet isn’t always available.</h5>
+                    </div>
+                    </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div className='features mt-5'>
+                    <h2 className='text-center'>Core Features</h2>
+                    <div className="coreFeatures d-flex flex-wrap justify-content-between">
+                    <div className="feature1 p-3 align-items-center">
+                    <img src={icon} alt="Icon" />
+                    <h1 className="display-5 fw-semibold mb-4">Learn Anywhere</h1>
+                    <p>Math games, stories, and learning tools.</p>
+                    </div>
+                    <div className="feature1 p-3 align-items-center">
+                    <img src={icon1} alt="Icon" />
+                    <h1 className="display-5 fw-semibold mb-4">Play Safely</h1>
+                    <p>Music, puzzles, and safe offline fun.</p>
+                    </div>
+                    <div className="feature1 p-3 align-items-center">
+                    <img src={icon2} alt="Icon" />
+                    <h1 className="display-5 fw-semibold mb-4">Be Creative</h1>
+                    <p>Screen-time limits & progress tracking.</p>
+                    </div>
+                    <div className="feature1 p-3 align-items-center">
+                    <img src={icon3} alt="Icon" />
+                    <h1 className="display-5 fw-semibold mb-4">Parent-Friendly</h1>
+                    <p>Drawing tools and customizable avatars.</p>
+                    </div>
+                    </div>
+                    </div>
+                </section>
+
+                  <section className="whySection py-1">
+                    <div className="w-100 d-flex row align-items-center">
+                        <div className="whytext col-lg-6">
+                            <div className="herotext1">
+                                <h1 className="display-4 fw-semibold mb-4">Why FunEdu?</h1>
+                                <p className="lead fw-medium mb-4">Kids need safe, engaging spaces to learn and play. Parents need peace of mind. </p>
+                                <p className="lead fw-medium mb-4">FunEdu makes both possible — anytime, anywhere, even without internet</p>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 d-flex justify-content-between justify-content-lg-end mt-4 mt-lg-0">
+                        <img
+                        src={whyimage}
+                        height={400}
+                        alt="A picture of toys and a little baby hand"
+                        className="rounded-3"
+                        />
+                    </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div className="signup mt-5">
+                        <div className="signupContent">
+                            <h1>We’re getting ready to launch</h1>
+                            <h5>Sign up to get notified when FunEdu is ready.</h5>
+                            <form onSubmit={handleSubmit} className="m-2">
+                            <input
+                            type="email"
+                            placeholder="Email Address"
+                            id="value"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                            />
+                            <button type="submit" className="btn btn-primary " >Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <Footer />
+            </div>
+        </div>
+    )
+}
+
+export default Home;
