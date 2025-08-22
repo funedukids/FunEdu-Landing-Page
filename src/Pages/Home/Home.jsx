@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import "./Home.css"
-import heroimg from "../../assets/heroimg.svg";
+import heroimg from "../../assets/childtoy.jpg";
 import img2 from "../../assets/imgsection2.png";
 import icon from "../../assets/icon.png";
 import icon1 from "../../assets/icon(1).png";
@@ -23,7 +23,7 @@ function Home() {
         <div className="landingPage">
             <div className="container">
                 <section className="heroSection py-1">
-                    <div className="w-100 d-flex row align-items-center">
+                    <div className="hero w-100 d-flex justify-between row ">
                         <div className="herotext col-lg-6">
                             <div className="herotext1">
                                 <h1 className="display-4 fw-semibold mb-4">Learning made fun, <br /> safe, easy and <br />offline-first </h1>
@@ -31,7 +31,7 @@ function Home() {
                                 <button className="btn btn-primary btn-lg">Join the Waitlist</button>
                             </div>
                         </div>
-                        <div className="col-lg-6 d-flex justify-content-between justify-content-lg-end mt-4 mt-lg-0">
+                        <div className="hero col-lg-6 d-flex justify-content-between justify-content-lg-end mt-4 mt-lg-0">
                         <img
                         src={heroimg}
                         height={600}
@@ -44,7 +44,7 @@ function Home() {
 
                 <section>
                     <div className="w-100 d-flex row align-items-center">
-                        <div className="col-lg-6 d-flex justify-content-between justify-content-lg-start mt-4 mt-lg-0">
+                        <div className="display col-lg-6 d-flex justify-content-between justify-content-lg-start mt-4 mt-lg-0">
                         <img
                         src={img2}
                         height={600}
@@ -54,7 +54,7 @@ function Home() {
                     </div>
                     <div className="herotext col-lg-6">
                             <div className="section2text">
-                        <h5 className="display fw-semibold mb-4">Every child deserves a safe space to learn and grow. FunEdu is designed to bring learning and creativity to kids — even in places where internet isn’t always available.</h5>
+                        <p className="display fw-semibold mb-4">Every child deserves a safe space to learn and grow. FunEdu is designed to bring learning and creativity to kids, even in places where internet isn’t always available.</p>
                     </div>
                     </div>
                     </div>
@@ -62,26 +62,26 @@ function Home() {
 
                 <section>
                     <div className='features mt-5'>
-                    <h2 className='text-center'>Core Features</h2>
-                    <div className="coreFeatures d-flex flex-wrap justify-content-between">
-                    <div className="feature1 p-3 align-items-center">
-                    <img src={icon} alt="Icon" />
-                    <h1 className="display-5 fw-semibold mb-4">Learn Anywhere</h1>
+                    <h2 className='fw-semibold'>Core Features</h2>
+                    <div className="coreFeatures m-5 d-flex flex-wrap justify-content-between">
+                    <div className="feature1 p-3 mb-2 align-items-center">
+                    <img src={icon} alt="Icon"/>
+                    <h5 className=" my-4">Learn Anywhere</h5>
                     <p>Math games, stories, and learning tools.</p>
                     </div>
-                    <div className="feature1 p-3 align-items-center">
+                    <div className="feature2 p-3 mb-2 align-items-center">
                     <img src={icon1} alt="Icon" />
-                    <h1 className="display-5 fw-semibold mb-4">Play Safely</h1>
+                    <h5 className=" my-4">Play Safely</h5>
                     <p>Music, puzzles, and safe offline fun.</p>
                     </div>
-                    <div className="feature1 p-3 align-items-center">
+                    <div className="feature3 p-3 ">
                     <img src={icon2} alt="Icon" />
-                    <h1 className="display-5 fw-semibold mb-4">Be Creative</h1>
+                     <h5 className=" my-4 align-items-center">Be Creative</h5>
                     <p>Screen-time limits & progress tracking.</p>
                     </div>
-                    <div className="feature1 p-3 align-items-center">
+                    <div className="feature4 p-3 align-items-center">
                     <img src={icon3} alt="Icon" />
-                    <h1 className="display-5 fw-semibold mb-4">Parent-Friendly</h1>
+                     <h5 className=" my-4">Parent-Friendly</h5>
                     <p>Drawing tools and customizable avatars.</p>
                     </div>
                     </div>

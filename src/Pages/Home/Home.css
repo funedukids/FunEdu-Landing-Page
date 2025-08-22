@@ -1,0 +1,81 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Fredoka', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.hero {
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 30px;
+}
+.hero img{
+    object-fit: contain;
+    width: 90%;
+}
+
+#root {
+  --primary-color: #54D9FF;
+  --secondary-color: #ffffff;
+  --tertiary-color: #d9d9d9;
+}
+.btn-primary {
+background-color: #54D9FF;
+border: none;
+color: #1E1E1E;
+font-size: 16px;
+font-weight: 500;
+}
+
+.display img{
+    object-fit: contain;
+    width: 90%;
+}
+
+.feature1{
+    width: 180px;
+    background-color: #732A0A;
+    height: 240px;
+    border-radius: 12px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.feature1 img, .feature2 img, .feature3 img, .feature4 img{
+    width: 40px;
+    align-items: center;
+}
+
+.feature1 p, .feature2 p, .feature3 p, .feature4 p{
+    font-size: 14px;
+    text-align: center;
+    
+}
+
+.feature2{
+    width: 180px;
+    background-color: #647E0D;
+    height: 240px;
+    border-radius: 12px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.feature3{
+    width: 180px;
+    background-color: #330404;
+    height: 240px;
+    border-radius: 12px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.feature4{
+    width: 180px;
+    background-color: #1D073D;
+    height: 240px;
+    border-radius: 12px;
+    color: #ffffff;
+    text-align: center;
+}
