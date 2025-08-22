@@ -34,7 +34,7 @@ function Home() {
                         <div className="hero col-lg-6 d-flex justify-content-between justify-content-lg-end mt-4 mt-lg-0">
                         <img
                         src={heroimg}
-                        height={600}
+                      
                         alt="A picture of toys and a little baby hand"
                         className="rounded-3"
                         />
@@ -47,7 +47,6 @@ function Home() {
                         <div className="display col-lg-6 d-flex justify-content-between justify-content-lg-start mt-4 mt-lg-0">
                         <img
                         src={img2}
-                        height={600}
                         alt="A picture of toys and a little baby hand"
                         className="rounded-3"
                         />
@@ -92,7 +91,7 @@ function Home() {
                     <div className="w-100 d-flex row align-items-center">
                         <div className="whytext col-lg-6">
                             <div className="herotext1">
-                                <h1 className="display-4 fw-semibold mb-4">Why FunEdu?</h1>
+                                <h2 className="fw-semibold mb-4">Why FunEdu?</h2>
                                 <p className="lead fw-medium mb-4">Kids need safe, engaging spaces to learn and play. Parents need peace of mind. </p>
                                 <p className="lead fw-medium mb-4">FunEdu makes both possible — anytime, anywhere, even without internet</p>
                             </div>

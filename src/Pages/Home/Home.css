@@ -5,13 +5,16 @@ body {
     width: 100%;
 }
 
+section{
+    margin: 5px;
+}
 .hero {
     justify-content: space-between;
     width: 50%;
     margin-top: 30px;
 }
 .hero img{
-    object-fit: contain;
+    object-fit: cover;
     width: 90%;
 }
 
