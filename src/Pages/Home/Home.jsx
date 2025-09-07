@@ -109,21 +109,16 @@ function Home() {
 
                 <section>
                     <div className="signup mt-5">
-                        <div className="signupContent">
-                            <h1>We’re getting ready to launch</h1>
-                            <h5>Sign up to get notified when FunEdu is ready.</h5>
-                            <form onSubmit={handleSubmit} className="m-2">
-                            <input
-                            type="email"
-                            placeholder="Email Address"
-                            id="value"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                            />
-                            <button type="submit" className="btn btn-primary " >Subscribe</button>
-                            </form>
-                        </div>
+                <div className="signupContent text-center m-4 p-4">
+                <h1 className="fw-bold">🚀 We’re getting ready to launch!</h1>
+                <h5 className="mt-3">
+                    FunEdu web app will be live shortly. Stay tuned for updates!
+                </h5>
+                <p className="mt-4 text-muted">
+                    Exciting features are on the way to make learning more fun and engaging.
+                </p>
+                </div>
+
                     </div>
                 </section>
 
