@@ -6,9 +6,10 @@ function Footer() {
   return (
     <footer className=" py-5">
       <div className="container">
-      <div className="back">
-        <a href="#" className="back p-2">Back to top</a>
-      </div>
+        <div className="back d-flex justify-content-end">
+          <a href="#" className="p-2">Back to top</a>
+        </div>
+
 
         <div className="row g-4 mt-3">
           <div className="col-md-3">
