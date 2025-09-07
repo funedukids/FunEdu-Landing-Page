@@ -128,7 +128,9 @@ function Home() {
                 </section>
 
                 <Footer />
-            </div>
+
+                </div>
+                 <script async src="https://eocampaign1.com/form/59b0fe22-8c33-11f0-87a0-d1c12aeab298.js" data-form="59b0fe22-8c33-11f0-87a0-d1c12aeab298"></script>
         </div>
     )
 }
