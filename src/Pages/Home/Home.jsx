@@ -110,7 +110,7 @@ function Home() {
                 <section>
                     <div className="signup mt-5">
                 <div className="signupContent text-center m-4 p-4">
-                <h1 className="fw-bold">🚀 We’re getting ready to launch!</h1>
+                <h1 className="fw-bold">We’re getting ready to launch!</h1>
                 <h5 className="mt-3">
                     FunEdu web app will be live shortly. Stay tuned for updates!
                 </h5>
