@@ -20,7 +20,17 @@ function Footer() {
             <ul className="list-unstyled">
               {/* <li className="mb-2"><a href="#" className="text-white link-decoration-custom"><img src={img1} width={35} alt="facebook" /> Facebook</a></li> */}
               {/* <li className="mb-2"><a href="#" className="text-white link-decoration-custom"><img src={img2} width={35} alt="linkedin" /> LinkedIn</a></li> */}
-              <li className="icon mb-2"><a href="https://www.instagram.com/funedumobilekidapp?igsh=bXY0Z3drZGhrMmNw" className="text-black link-decoration-custom"><img src={img3} width={16} alt="instagram" /> Instagram</a></li>
+              <li className="icon mb-2">
+                <a
+                  href="https://www.instagram.com/funedumobilekidapp?igsh=bXY0Z3drZGhrMmNw"
+                  className="text-black link-decoration-custom d-flex align-items-center gap-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={img3} width={16} alt="instagram" />
+                  Instagram
+                </a>
+              </li>
               <li className="icon mb-2">
                 <a
                   href="mailto:tech@funedukids.com"
@@ -38,8 +48,17 @@ function Footer() {
                   Email
                 </a>
               </li>
-
-              <li className="icon mb-2"><a href="https://x.com/FuneduKidApp?t=JIWXdfiR7d8RU3RvG1PD8g&s=09" className="text-black link-decoration-custom"><img src={img5} width={16} alt="x" /> X</a></li>
+              <li className="icon mb-2">
+                <a
+                  href="https://x.com/FuneduKidApp?t=JIWXdfiR7d8RU3RvG1PD8g&s=09"
+                  className="text-black link-decoration-custom d-flex align-items-center gap-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={img5} width={16} alt="x" />
+                  X
+                </a>
+              </li>
             </ul>
           </div>
           <div className="col-md-3">
