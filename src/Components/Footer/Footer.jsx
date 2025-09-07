@@ -22,7 +22,7 @@ function Footer() {
               {/* <li className="mb-2"><a href="#" className="text-white link-decoration-custom"><img src={img2} width={35} alt="linkedin" /> LinkedIn</a></li> */}
               <li className="icon mb-2"><a href="https://www.instagram.com/funedumobilekidapp?igsh=bXY0Z3drZGhrMmNw" className="text-black link-decoration-custom"><img src={img3} width={16} alt="instagram" /> Instagram</a></li>
               <li className="icon mb-2"><a href="tech@funedukids.com" className="text-black link-decoration-custom"><img src={img4} width={16} alt="email" style={{ filter: 'invert(0%) sepia(1000%) saturate(10000%) hue-rotate(500deg)' }} />Email</a></li>
-              <li className="icon mb-2"><a href="https://x.com/FuneduKidApp?t=JIWXdfiR7d8RU3RvG1PD8g&s=09" className="text-black link-decoration-custom"><img src={img5} width={40} alt="x" /> X</a></li>
+              <li className="icon mb-2"><a href="https://x.com/FuneduKidApp?t=JIWXdfiR7d8RU3RvG1PD8g&s=09" className="text-black link-decoration-custom"><img src={img5} width={16} alt="x" /> X</a></li>
             </ul>
           </div>
           <div className="col-md-3">
