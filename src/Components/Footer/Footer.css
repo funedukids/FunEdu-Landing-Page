@@ -1,8 +1,0 @@
-.back a {
-  color: black;
-  text-decoration: none;
-}
-
-.back a:hover {
-  text-decoration: underline; /* optional */
-}
