@@ -4,7 +4,7 @@ import img5 from "../../assets/footer-5.svg";
 
 function Footer() {
   return (
-    <footer className=" py-5">
+    <footer className=" ">
       <div className="container">
       <div className="back d-flex justify-content-end">
         <a href="#" className="p-2 text-black link-decoration-custom">Back to top</a>
