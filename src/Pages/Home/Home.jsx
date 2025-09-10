@@ -19,18 +19,35 @@ function Home() {
     // send email to backend or API
   };
 
+  const handleJoinWaitlist = () => {
+  // Send event to GA
+  if (window.gtag) {
+    window.gtag("event", "join_waitlist_click", {
+      event_category: "engagement",
+      event_label: "Join Waitlist Button",
+    });
+  }
+
+  // Open Google Form in new tab
+  window.open("https://forms.gle/kiYY2gEKS9w7sFHd9", "_blank");
+};
+
     return(
         <div className="landingPage">
             <div className="container">
                 <section className="heroSection py-1">
                     <div className="hero w-100 d-flex justify-between row ">
+
                         <div className="herotext col-lg-6">
                             <div className="herotext1">
                                 <h1 className="display-4 fw-semibold mb-4">Learning made fun, <br /> safe, easy and <br />offline-first </h1>
                                 <p className="lead fw-medium mb-4">We’re building an educational app for kids that works anywhere, anytime — no internet required.</p>
-                                <button className="btn btn-primary btn-lg">Join the Waitlist</button>
+                                <button className="btn btn-primary btn-lg" onClick={handleJoinWaitlist}>
+                                Join the Waitlist
+                                </button>
                             </div>
                         </div>
+
                         <div className="hero col-lg-6 d-flex justify-content-between justify-content-lg-end mt-4 mt-lg-0">
                         <img
                         src={heroimg}
